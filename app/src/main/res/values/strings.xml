@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vivz Dagger 2 Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_store">Store</string>
+    <string name="btn_refresh">Refresh</string>
+</resources>
