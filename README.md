@@ -24,8 +24,12 @@ Ask yourself 3 questions
 
 Let's say we want SharedPreferences to be supplied to us by Dagger
 
-1)Which object do you want dagger to provide?
-Ans) Shared Preferences, create a module that returns a SharedPreferences object
+<ol>
+<li>
+<p>Which object do you want dagger to provide?</p>
+<p>Shared Preferences, create a module that returns a SharedPreferences object</p>
+</li>
+<ol>
 
 2) Where do you want dagger to provide this object?
 Ans) In 2 places, Fragment A and Fragment B in this app, use the @Inject annotation at both places and create a component that has 2 methods, where the first method takes a reference to Fragment A and the second method takes a reference to Fragment B so that Dagger can generate an implementation that extends your Component interface and use your module to construct the SharedPreferences object wherever required and supply it.
