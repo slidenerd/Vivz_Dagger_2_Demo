@@ -29,13 +29,17 @@ Let's say we want SharedPreferences to be supplied to us by Dagger
 <p>Which object do you want dagger to provide?</p>
 <p>Shared Preferences, create a module that returns a SharedPreferences object</p>
 </li>
+
+<li>
+<p>Where do you want dagger to provide this object?</p>
+<p>In 2 places, Fragment A and Fragment B in this app, use the @Inject annotation at both places and create a component that has 2 methods, where the first method takes a reference to Fragment A and the second method takes a reference to Fragment B so that Dagger can generate an implementation that extends your Component interface and use your module to construct the SharedPreferences object wherever required and supply it.</p>
+</li>
+
+<li>
+<p>How will you construct or provide this object?</p>
+<p>Create a method inside your module with a @Provides annotation that returns an object of the type you want dagger to provide, in our case, that type is SharedPreferences.</p>
+</li>
 <ol>
-
-2) Where do you want dagger to provide this object?
-Ans) In 2 places, Fragment A and Fragment B in this app, use the @Inject annotation at both places and create a component that has 2 methods, where the first method takes a reference to Fragment A and the second method takes a reference to Fragment B so that Dagger can generate an implementation that extends your Component interface and use your module to construct the SharedPreferences object wherever required and supply it.
-
-3) How will you construct or provide this object?
-Ans) Create a method inside your module with a @Provides annotation that returns an object of the type you want dagger to provide, in our case, that type is SharedPreferences.
 
 
 
