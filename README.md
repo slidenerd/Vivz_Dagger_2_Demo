@@ -62,3 +62,8 @@ We add the @Inject annotations inside Fragment A and Fragment B where we want Da
 In this step, Dagger has compiled our modules and components and generated an implementation of our component interface. Its name is DaggerStorageComponent in our case. Call its builder() method, supply an object of our StorageModule and finally call its build() method. 
 
 ![snap 2015-09-11 at 15 28 09](https://cloud.githubusercontent.com/assets/5139030/9812264/bad42d56-5899-11e5-8ec7-a74a16f13e46.png)
+
+<b>Step 5</b>
+Notice how we have passed a reference of Fragment A by getting our Activity, get our Application from our Activity, typecast it to our custom Application, get the component from that and simply call inject() method which was actually a part of our Component interface declared in Step 2. This is how the whole process works
+
+![snap 2015-09-11 at 15 30 20](https://cloud.githubusercontent.com/assets/5139030/9812299/0ad5bb3a-589a-11e5-83e5-af481037f474.png)
