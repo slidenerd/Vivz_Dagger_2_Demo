@@ -51,3 +51,14 @@ Create a component interface called StorageComponent that has all the methods wh
 
 ![snap 2015-09-11 at 15 24 25](https://cloud.githubusercontent.com/assets/5139030/9812184/35dfb688-5899-11e5-9320-80f0eb272cda.png)
 
+<b>Step 3</b>
+
+We add the @Inject annotations inside Fragment A and Fragment B where we want Dagger to supply us with a SharedPreferences object. Build the program at this point so that Dagger can generate an implementation for your component interface. We use this implementation in the next step.
+
+![snap 2015-09-11 at 15 26 14](https://cloud.githubusercontent.com/assets/5139030/9812228/770059e2-5899-11e5-9b43-fd739ad01b07.png)
+
+<b>Step 4</b>
+
+In this step, Dagger has compiled our modules and components and generated an implementation of our component interface. Its name is DaggerStorageComponent in our case. Call its builder() method, supply an object of our StorageModule and finally call its build() method. 
+
+![snap 2015-09-11 at 15 28 09](https://cloud.githubusercontent.com/assets/5139030/9812264/bad42d56-5899-11e5-8ec7-a74a16f13e46.png)
