@@ -41,7 +41,10 @@ Let's say we want SharedPreferences to be supplied to us by Dagger
 </li>
 <ol>
 
+<b>Step 1:</b>
+Construct a module that knows how to create SharedPreferences object which will be used by Dagger. Since we need a context which should be Application Context as SharedPreferences tend to be used everywhere, make a constructor that accepts an object of your custom Application class. Notice the @Singleton annotation which indicates that only a single object of SharedPreferences will be supplied to everyone once its created.
 
+![snap 2015-09-11 at 15 20 39](https://cloud.githubusercontent.com/assets/5139030/9812094/afd150b0-5898-11e5-8444-d01161b0d770.png)
 
 
 
