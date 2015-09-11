@@ -46,6 +46,8 @@ Construct a module that knows how to create SharedPreferences object which will 
 
 ![snap 2015-09-11 at 15 20 39](https://cloud.githubusercontent.com/assets/5139030/9812094/afd150b0-5898-11e5-8444-d01161b0d770.png)
 
+<b>Step 2:</b>
+Create a component interface called StorageComponent that has all the methods which simply specify where to inject the reference. Dagger 2 will generate the concrete implementation for your interface and fill the necessary code using your module that you created earlier in Step 1. Notice that we plan to use @Inject annotations inside Fragment A and Fragment B and therefore we have 2 methods inside our Component interface that exactly tell Dagger the list of all places where we need a SharedPreferences object. Also notice the modules annotation that tells Dagger to use our module declared in the earlier step to actually construct a SharedPreferences object when needed.
 
-
+![snap 2015-09-11 at 15 24 25](https://cloud.githubusercontent.com/assets/5139030/9812184/35dfb688-5899-11e5-9320-80f0eb272cda.png)
 
