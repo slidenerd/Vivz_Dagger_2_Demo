@@ -1,6 +1,11 @@
 # Vivz_Dagger_2_Demo
 This demo shows you how to setup and use Dagger 2 Dependency Injection library in your Android apps
 
+<b>Note:</b>
+<p>Clone the <b>master</b> branch to see how the app was created without using dagger, then checkout the <b>afterdagger</b> branch to see how the app was created after applying dagger.</p><br>
+
+<b>Dagger 2 Instructions:</b>
+
 <b>The Main Gradle file</b>
 
 ![snap 2015-09-11 at 15 07 56](https://cloud.githubusercontent.com/assets/5139030/9811773/e8a5ff1e-5896-11e5-84fd-30f854d09255.png)
